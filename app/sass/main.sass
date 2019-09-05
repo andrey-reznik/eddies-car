@@ -6,3 +6,322 @@
 @import "keyframes"
 @import "smart-grid"
 @import "media"
+@import "buttons"
+@import "inputs"
+
++reset()
+
+.container
+    +wrapper()
+
+.row
+    +row-flex()
+
+.icon
+    fill: #000000
+
+.section-title
+    font-size: 36px
+    font-weight: 700
+    text-align: center
+body
+    color: $text-primary
+    font-family: 'Montserrat', sans-serif
+    font-size: 14px
+a
+    text-decoration: none
+.header
+    background-color: $palette-dark
+    .row
+        height: 100px
+        align-items: center
+    .logo-wrapper
+        +col()
+        +size(3)
+    .work-time
+        +col()
+        +size(2)
+        +shift-left(2)
+        text-align: center
+        font-size: 12px
+    .phones
+        margin-left: auto
+        margin-right: 30px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        &__phone
+            font-size: 18px
+            font-weight: 700
+            margin-bottom: 14px
+            &:last-child
+                margin-bottom: 0
+    .call-us
+        +col()
+        +size(5)
+        display: flex
+
+
+// Section home
+
+.home
+    background: eurl('header_bg.jpg') no-repeat center center / cover
+    height: 860px
+    .hero
+        +col()
+        +size(6)
+        padding: 100px 124px 125px 100px
+        background-color: $palette-secondary
+        color: $text-secondary
+        &__title, &__subtitle
+            font-weight: 800
+        &__title
+            font-size: 40px
+            margin-bottom: 49px
+            text-transform: uppercase
+            word-wrap: normal
+        &__subtitle
+            font-size: 25px
+        .advantages-list
+            margin-top: 100px
+            .advantge
+                display: flex
+                align-items: center
+                margin-bottom: 48px
+                &:last-child
+                    margin-bottom: 0
+                .icon
+                    max-width: 30px
+                    max-height: 30px
+                &__text
+                    margin-left: 26px
+
+// Section request price
+
+.request-price
+    background: eurl('wide_belaz_bg.jpg') no-repeat center center / contain
+    color: #000000
+    max-height: 500px
+    padding: 100px
+    .content-wrapper
+        +col()
+        +size(10)
+        +shift-left(2)
+        justify-content: space-around
+        display: flex
+        flex-direction: column
+        .section-title
+            font-weight: 900
+            font-size: 30px
+            text-align: right
+            width: 550px
+            margin-left: auto
+    .form
+        display: flex
+        flex-direction: column
+        margin-top: 60px
+        .input-wrapper
+            margin-left: 30px
+        &__input
+        &-top
+            display: flex
+            flex-direction: row
+            justify-content: flex-end
+        &-bottom
+            display: flex
+            flex-direction: row
+            margin-top: 30px
+            .note
+                display: flex
+                margin-right: 30px
+                align-items: center
+                margin-left: auto
+                &__text
+                    font-weight: 700
+                    width: 230px
+                    text-align: right
+                    margin-right: 30px
+                .icon
+                    max-width: 30px
+                    max-height: 30px
+            .btn
+                align-self: flex-end
+                width: 370px
+                height: 80px
+
+// Section advantages
+
+.advantages
+    background: $palette-primary
+    padding: 100px 0
+    box-sizing: border-box
+    .section-title
+        font-size: 36px
+        font-weight: 700
+        text-align: center
+        width: 100%
+    .subtitle
+        font-size: 20px
+        text-align: center
+        width: 40%
+        margin: 0 auto
+        margin-top: 30px
+    .advantages-list
+        +col()
+        +size(12)
+        display: flex
+        justify-content: space-between
+        margin-top: 105px
+        .advantage
+            display: flex
+            flex-direction: column
+            align-items: center
+            &__text
+                font-size: 18px
+                text-align: center
+                width: 250px
+                margin-top: 50px
+            .icon
+                fill: #ffffff
+                max-width: 100px
+                max-height: 100px
+.find-detail
+    background: eurl('blue_belaz_bg.jpg') no-repeat center center / cover
+    height: 580px
+    padding: 100px 0
+    box-sizing: border-box
+    .section-title
+        font-size: 30px
+        font-weight: 700
+        width: 100%
+        text-align: center
+    .subtitle
+        margin-top: 30px
+        font-size: 20px
+        text-align: center
+        width: 60%
+        margin: 0 auto
+    .form
+        +col()
+        +size(12)
+        display: flex
+        margin-top: 60px
+        justify-content: space-between
+        .btn
+            width: 370px
+            height: 70px
+    .recall-text
+        margin-top: 60px
+        text-align: center
+        width: 100%
+        b
+            font-size: 30px
+            margin: 16px
+        br
+            margin-bottom: 30px
+            &:last-child
+                margin-bottom: 0
+
+
+// Section Safe shipping
+.safe-shipping
+    color: $text-secondary
+    padding: 100px 0
+    .section-title
+        font-weight: 700
+        width: 100%
+        text-align: center
+        font-size: 36px
+    .safe-shipping-list
+        display: flex
+        margin-top: 100px
+        .list-item
+            +col()
+            +size(4)
+            display: flex
+            flex-direction: column
+            justify-content: center
+            text-align: center
+            align-items: center
+            &__img
+                height: 300px
+                width: 230px
+            &__description
+                font-size: 18px
+                margin-top: 40px
+            &__more
+                font-weight: 700
+                font-size: 18px
+                text-decoration: underline
+                color: $text-secondary
+                margin-top: 40px
+.discounts
+    padding: 100px 0
+    background-color: $palette-primary
+    .section-title
+        +col()
+        +size(10)
+        +shift(1)
+    &-list
+        display: flex
+        margin-top: 100px
+        .list-item
+            +col()
+            +size(3)
+            display: flex
+            flex-direction: column
+            align-items: center
+            text-align: center
+            &__circle
+                width: 100px
+                height: 100px
+                border: 2px solid $text-primary
+                border-radius: 100%
+                display: flex
+                align-items: center
+                justify-content: center
+                margin-bottom: 40px
+                .icon
+                    fill: $text-primary
+                    max-width: 56px
+                    max-height: 39px
+            &__circle-text
+                font-weight: 700
+                font-size: 30px
+
+.leave-questions
+    background-color: $palette-primary-light
+    padding: 100px 0
+    .section-title, .subtitle
+        text-align: center
+        width: 100%
+    .subtitle
+        margin: 30px 0 100px 0
+        font-size: 20px
+    .questions-list
+        +col()
+        +size(5)
+        display: flex
+        flex-direction: column
+        &__item
+            margin-bottom: 55px
+            font-weight: 700
+            text-decoration: underline
+            padding-left: 40px
+            cursor: pointer
+            &:last-child
+                margin-bottom: 0
+    .director
+        +col()
+        +size(6)
+        +shift-left(1)
+        height: 390px
+        background: eurl('director.jpg') no-repeat center center / contain
+        position: relative
+        &__job-title-bg
+            background-color: transparentize($palette-primary-light, .2)
+            width: 230px
+            padding: 12px 29px 11px 19px
+            position: absolute
+            bottom: 0
+            left: 0

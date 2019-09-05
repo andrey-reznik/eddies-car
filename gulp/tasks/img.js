@@ -5,9 +5,9 @@ module.exports = function () {
             interlaced: true,
             svgoPlugins: [{removeViewBox: false}],
             plugins: [
-                $.gp.imageminJpegtran({ //Сжатие JPEG
-                    progressive: true
-                }),
+                // $.gp.imageminJpegtran({ //Сжатие JPEG
+                //     progressive: true
+                // }),
                 $.gp.imageminPngquant() //Сжатие PNG
             ]
         });

@@ -1,0 +1,23 @@
+// Primary color
+$palette-dark: #191919
+$palette-primary: #08243e
+$palette-primary-light: #0b3554
+$palette-secondary: #f7b516
+$palette-secondary-dark: #ffbc3b
+// Buttons colors
+$btn-primary: #1669b3
+$btn-secondary: $palette-secondary
+// Fonts colors
+$text-primary: #ffffff
+$text-secondary: #000000
+// Input colors
+$fields-bg: #f2f2f2
+$fields-placeholder: #818181
+
+@function eurl($img)
+    $custom: '/eddies-car'
+    $use-custom: false
+    @if $use-custom
+        @return url($custom + '/img/' + $img)
+    @else 
+        @return url('/img/' + $img)

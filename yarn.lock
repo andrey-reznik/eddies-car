@@ -6126,6 +6126,11 @@ token-stream@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/token-stream/-/token-stream-0.0.1.tgz#ceeefc717a76c4316f126d0b9dbaa55d7e7df01a"
 
+tooltipster@^4.2.7:
+  version "4.2.7"
+  resolved "https://registry.yarnpkg.com/tooltipster/-/tooltipster-4.2.7.tgz#bce0e3ed6cc3f0e333fc1865e0df16a90e8f0e39"
+  integrity sha512-W4tY3LG2eyPY2VQZRH3JcsNuRl3jPCEGmKBPOMTP/05E3+1kOJjASzPRRkcpP+uf9vqX7+896ivU86f6B8Esgw==
+
 tough-cookie@~2.4.3:
   version "2.4.3"
   resolved "https://registry.yarnpkg.com/tough-cookie/-/tough-cookie-2.4.3.tgz#53f36da3f47783b0925afa06ff9f3b165280f781"

@@ -32,5 +32,8 @@
     "jquery": "^3.4.1",
     "require-reload": "^0.2.2",
     "smart-grid": "^2.0.1"
+  },
+  "dependencies": {
+    "tooltipster": "^4.2.7"
   }
 }

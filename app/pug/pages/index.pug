@@ -3,5 +3,105 @@ extends ../layout/main
 block variables
     - var title = $.home.title
     - var themeColor = '#000'
+    - var ibd = $.home.images_base_dir
+    - var hs = $.home.home_screen
+    - var rps = $.home.request_price_screen
+    - var as = $.home.advantages_screen
+    - var fds = $.home.find_detail_screen
+    - var sss = $.home.safe_shipping_screen
+    - var dss = $.home.discounts_screen
+    - var lqs = $.home.leave_questions_screen
 
 block content
+    section.home
+        .container
+            .row
+                +b.hero
+                    +e.H1.title= hs.screen_title.title
+                    +e.SPAN.subtitle= hs.screen_title.subtitle
+                    +b.UL.advantages-list
+                        each advantage in hs.advantages
+                            +b.LI.advantge
+                                +icon(advantage.icon)
+                                +e.SPAN.text= advantage.text
+    section.request-price
+        .container
+            .row
+                .content-wrapper
+                    h3.section-title= rps.screen_title.title
+                    +b.FORM(action= rps.form.action method= rps.form.method).form
+                        .form-top
+                            each input in rps.form.fields
+                                .input-wrapper
+                                    +e.INPUT(type= input.type placeholder= input.placeholder).input
+                                    +icon(input.icon)
+                        .form-bottom
+                            +b.note
+                                +e.P.text= rps.form.note.text
+                                +icon(rps.form.note.icon)
+                            +b.INPUT(type= rps.form.buttons.request_price.type value= rps.form.buttons.request_price.text).btn._primary
+    section.advantages
+        .container
+            .row
+                h2.section-title= as.screen_title.title
+                span.subtitle= as.screen_title.subtitle
+            .row
+                .advantages-list
+                    each advantage in as.advantages
+                        +b.advantage
+                            +icon(advantage.icon)
+                            +e.SPAN.text= advantage.text
+
+    section.find-detail
+        .container
+            .row
+                h2.section-title= fds.screen_title.title
+                span.subtitle= fds.screen_title.subtitle
+            .row
+                +b.FORM(action= fds.form.action, method= fds.form.method).form
+                    each input in fds.form.fields
+                        .input-wrapper
+                            +e.INPUT(type= input.type placeholder= input.placeholder).input
+                            +icon(input.icon)
+                    +b.INPUT(type= rps.form.buttons.request_price.type value= rps.form.buttons.request_price.text).btn._secondary
+            .row
+                .recall-text!= fds.recall_notice.text
+    
+    section.safe-shipping
+        .container
+            .row
+                h2.section-title= sss.screen_title.title
+            .row
+                .safe-shipping-list
+                    each point in sss.points
+                        +b.list-item
+                            +e.IMG(src= ibd + point.img alt= point.alt).img
+                            +e.SPAN.description= point.text
+                            +e.A(href= sss.point_more.link).more= sss.point_more.text
+    section.discounts
+        .container
+            .row
+                .h2.section-title= dss.screen_title.title
+            .row
+                .discounts-list
+                    each discount in dss.discounts_list
+                        +b.list-item
+                            +e.circle
+                                if discount.icon_t
+                                    +e.SPAN.circle-text= discount.icon_t
+                                else
+                                    +icon(discount.icon)
+                            +e.P.description= discount.text
+    section.leave-questions
+        .container
+            .row
+                h2.section-title= lqs.screen_title.title
+                p.subtitle= lqs.screen_title.subtitle
+            .row
+                +b.OL.questions-list
+                    each question in lqs.questions_list
+                        +e.LI.item= question.question
+                            +e.P.answer= question.answer
+                +b.director
+                    +e.job-title-bg
+                        +e.P.job-title= lqs.director_cabinet.job_title
