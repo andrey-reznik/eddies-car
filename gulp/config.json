@@ -73,6 +73,6 @@
   "loadPlugins":{
     "pattern": ["*"]
   },
-  "release": false,
+  "release": true,
   "gulpRoot": "../../"
 }

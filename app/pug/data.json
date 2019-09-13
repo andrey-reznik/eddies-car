@@ -1,7 +1,7 @@
 {
     "home": {
         "title": "Eddie's Car",
-        "images_base_dir": "/img/",
+        "images_base_dir": "/eddies-car/img/",
         "theme_color": "#191919",
         "header": {
             "logo": {
@@ -16,7 +16,7 @@
                     "phone": "+7 (818) 247-47-25"
                 },
                 {
-                    "phone": "+7 (818) 247-47-25"
+                    "phone": "+7 (818) 247-47-27"
                 }
             ],
             "buttons": {
@@ -66,7 +66,7 @@
                     {
                         "icon": "call-answer",
                         "placeholder": "Введите ваш телефон",
-                        "type": "phone"
+                        "type": "tel"
                     }
                 ],
                 "buttons": {
@@ -122,7 +122,7 @@
                     {
                         "icon": "call-answer",
                         "placeholder": "Введите ваш телефон ",
-                        "type": "phone"
+                        "type": "tel"
                     }
                 ],
                 "buttons": {
@@ -278,7 +278,7 @@
                     {
                         "icon": "call-answer",
                         "placeholder": "Введите ваш телефон ",
-                        "type": "phone"
+                        "type": "tel"
                     }
                 ],
                 "buttons": {

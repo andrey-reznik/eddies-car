@@ -16,7 +16,7 @@ $fields-placeholder: #818181
 
 @function eurl($img)
     $custom: '/eddies-car'
-    $use-custom: false
+    $use-custom: true
     @if $use-custom
         @return url($custom + '/img/' + $img)
     @else 
