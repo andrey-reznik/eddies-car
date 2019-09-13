@@ -2,7 +2,7 @@ extends ../layout/main
 
 block variables
     - var title = $.home.title
-    - var themeColor = '#000'
+    - var themeColor = $.home.theme_color
     - var ibd = $.home.images_base_dir
     - var hs = $.home.home_screen
     - var rps = $.home.request_price_screen
@@ -11,6 +11,7 @@ block variables
     - var sss = $.home.safe_shipping_screen
     - var dss = $.home.discounts_screen
     - var lqs = $.home.leave_questions_screen
+    - var cws = $.home.comfort_work_screen
 
 block content
     section.home
@@ -105,3 +106,61 @@ block content
                 +b.director
                     +e.job-title-bg
                         +e.P.job-title= lqs.director_cabinet.job_title
+    section.comfort-work
+        .container
+            .row
+                h2.section-title= cws.screen_title.title
+                p.subtitle= cws.screen_title.subtitle
+            .row
+                .road
+                    each point in cws.road
+                        +b.road-item
+                            +e.IMG(src= ibd + point.icon).img
+                            +e.SPAN.description= point.text
+    section.our-stcok
+        - var oss = $.home.our_stock_screen
+        .container
+            .row
+                h2.section-title= oss.screen_title.title
+                p.subtitle= oss.screen_title.subtitle
+            .row
+                .stock-photos
+                    each num in [1, 2, 3]
+                        +b.stock-photo
+                            +e.IMG(src= ibd + oss.image.prefix + num + oss.image.postfix).img
+    section.mobile-team
+        - var mts = $.home.mobile_team_screen
+        .container
+            .row
+                h2.section-title= mts.screen_title.title
+            .row
+                .road
+                    each point in mts.road
+                        +b.road-item
+                            +e.circle
+                                +e.IMG(src= ibd + point.icon).img
+                            +e.SPAN.description= point.text
+    section.consultation
+        - var cs = $.home.consultation_screen
+        .container
+            .row
+                h2.section-title= cs.screen_title.title
+            .row
+                span.call-us= cs.call_us.title
+                span.phone= cs.call_us.phone
+            .row
+                +b.FORM(action= cs.form.action method= cs.form.method).form
+                    each input in cs.form.fields                    
+                        .input-wrapper
+                            +e.INPUT(type= input.type placeholder= input.placeholder).input
+                            +icon(input.icon)
+                    +b.INPUT(type= cs.form.buttons.recall_now.type value= cs.form.buttons.recall_now.text).btn._secondary
+    section.welcome-to-office
+            - var wos = $.home.welcome_office_screen
+            .container
+                .row
+                    h2.section-title= wos.screen_title.title
+                    p.adress= wos.adress.text
+                    p.phone= wos.phone.text
+    section.map
+        iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1714.8639467681544!2d40.51329681627967!3d64.54449498945864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x441836858b23cd43%3A0xf35372b070d2d7d!2z0L_RgNC-0YHQvy4g0KLRgNC-0LjRhtC60LjQuSwgNjUsINCQ0YDRhdCw0L3Qs9C10LvRjNGB0LosINCQ0YDRhdCw0L3Qs9C10LvRjNGB0LrQsNGPINC-0LHQuy4sIDE2MzAwNA!5e0!3m2!1sru!2sru!4v1568131674394!5m2!1sru!2sru' frameborder='0' allowfullscreen)
