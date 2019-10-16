@@ -28,5 +28,5 @@
             }
         }
     },
-    "outputFolder": "app/sass"
+  "outputFolder": "app/sass/tools"
 }

@@ -9,13 +9,13 @@ module.exports = function () {
             }))
             .pipe($.gp.cheerio({
                 run: function($) {
-                    $('[fill]').removeAttr('fill');     //Удаляет атрибут fill
-                    $('[stroke]').removeAttr('stroke'); //Удаляет атрибут stroke
-                    $('[style]').removeAttr('style');   //Удаляет атрибут style
+                    $('[fill]').removeAttr('fill');     // Удаляет атрибут fill
+                    $('[stroke]').removeAttr('stroke'); // Удаляет атрибут stroke
+                    $('[style]').removeAttr('style');   // Удаляет атрибут style
                 },
                 parserOptions: { xmlMode: true }
             }))
-            .pipe($.gp.replace('&gt;', '>'))            //Заменяет &gt; на >
+            .pipe($.gp.replace('&gt;', '>'))            // Заменяет &gt; на >
             .pipe($.gp.svgSprite({
                 mode: {
                     symbol: {

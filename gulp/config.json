@@ -46,6 +46,7 @@
       "fonts": "gulp/sources/fonts.json"
     },
     "tasks": [
+      "./gulp/tasks/args",
       "./gulp/tasks/dist",
       "./gulp/tasks/clear",
       "./gulp/tasks/fonts",

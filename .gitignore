@@ -3,3 +3,4 @@
 node_modules
 /app/libs/
 /app/serve/
+/dist/

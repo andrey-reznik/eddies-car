@@ -1,0 +1,95 @@
+{
+    "documents": [
+        {
+            "id": "",
+            "name": "",
+            "title": "",
+            "color_scheme": ""
+        }
+    ],
+    "form": {
+        "action": "",
+        "method": "",
+        "title": "",
+        "autocomplete": "",
+        "novalidate": "",
+        "inputs": [
+            {
+                "label": {
+                    "value": "",
+                    "class": "",
+                    "id": ""
+                },
+                "id": "",
+                "type": "",
+                "name": "",
+                "value": "",
+                "placeholder": "",
+                "checked": false,
+                "disabled": false,
+                "max": 1,
+                "maxlength": 1,
+                "min": 1,
+                "pattern": "",
+                "readonly": false,
+                "required": false,
+                "size": 1,
+                "step": 1,
+                "autocomplete": "",
+                "autofocus": "",
+                "form": "",
+                "formaction": "",
+                "formenctype": "",
+                "formmethod": "",
+                "formnovalidate": "",
+                "formtarget": "",
+                "height": 1,
+                "width": 1,
+                "list": "",
+                "multiple": "",
+                "cols": 1,
+                "rows": 1,
+                "wrap": ""
+            }
+        ],
+        "buttons": [
+            {
+                "id": "",
+                "name": "",
+                "type": "",
+                "text": "",
+                "class": "",
+                "value": ""
+            }
+        ]
+    },
+    "tabs": {
+        "list": [
+            {
+                "id": "",
+                "name": "",
+                "text": ""
+            }
+        ],
+        "content": [
+            {}
+        ]
+    },
+    "modals": [
+        {
+            "id": "",
+            "name": ""
+        }
+    ],
+    "sections": [
+        {
+            "id": "",
+            "name": "",
+            "title": {
+                "text": "",
+                "subtitle": ""
+            },
+            "items": []
+        }
+    ]
+}

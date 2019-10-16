@@ -1,7 +1,7 @@
 {
     "home": {
         "title": "Eddie's Car",
-        "images_base_dir": "/eddies-car/img/",
+        "images_base_dir": "/img/",
         "theme_color": "#191919",
         "header": {
             "logo": {
@@ -61,12 +61,14 @@
                     {
                         "icon": "mail",
                         "placeholder": "Введите ваш e-mail",
-                        "type": "email"
+                        "type": "email",
+                        "name": "email"
                     },
                     {
                         "icon": "call-answer",
                         "placeholder": "Введите ваш телефон",
-                        "type": "tel"
+                        "type": "tel",
+                        "name": "phone"
                     }
                 ],
                 "buttons": {
@@ -117,12 +119,14 @@
                     {
                         "icon": "bars-code",
                         "placeholder": "Введите артикул детали ",
-                        "type": "text"
+                        "type": "text",
+                        "name": "article"
                     },
                     {
                         "icon": "call-answer",
                         "placeholder": "Введите ваш телефон ",
-                        "type": "tel"
+                        "type": "tel",
+                        "name": "phone"
                     }
                 ],
                 "buttons": {
@@ -278,7 +282,8 @@
                     {
                         "icon": "call-answer",
                         "placeholder": "Введите ваш телефон ",
-                        "type": "tel"
+                        "type": "tel",
+                        "name": "phone"
                     }
                 ],
                 "buttons": {
