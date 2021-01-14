@@ -29,7 +29,7 @@
     "gulp-uglify": "^3.0.0",
     "imagemin-jpegtran": "^5.0.2",
     "imagemin-pngquant": "^5.0.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jsonpath": "^1.0.2",
     "require-reload": "^0.2.2",
     "smart-grid": "^2.0.1",
